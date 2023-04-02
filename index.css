@@ -1,0 +1,63 @@
+
+body {
+    font-family: Calibri, serif;
+}
+
+.hidden {
+    display: none; !important;
+}
+
+.box {
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.invite-body > * {
+    margin: 10px;
+}
+
+.header {
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+
+.invite-body {
+    display: flex;
+    flex-direction: row;
+}
+
+#message-box > div {
+    margin: 2px 0;
+}
+
+#message-box > div > .date {
+    border-left: 2px solid black;
+    padding: 0 15px;
+    margin-right: 5px;
+    background-color: lightgray;
+}
+
+.date {
+    font-family: "Courier New", serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.input-box > * {
+    margin: 5px;
+    font-size: 20px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    background-color: #b4e77e;
+}
+
+.input-box input {
+    flex-grow: 1;
+    font-family: Calibri, serif;
+}

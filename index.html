@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebRTC game</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="https://unpkg.com/peerjs@1.3.2/dist/peerjs.min.js"></script>
+    <script src="index.js" type="module"></script>
+</head>
+<body>
+
+<div id="invite-card" class="invite-card box hidden">
+    <div class="invite-header header">Invite other player</div>
+    <div class="invite-body">
+        <div id="invite-qr"></div>
+        <div>
+            Invite another player via Telegram by scanning the QR code, or just
+            <a id="invite-link" href="#" target="_blank">click here to open a new peer</a>.</div>
+    </div>
+</div>
+
+<div class="message-window box">
+    <div class="header">Messages</div>
+    <div class="input-box">
+        <label for="input-msg">Say something:</label>
+        <input name="input-msg" id="input-msg" type="text" placeholder="Type in your message to the other player">
+    </div>
+    <div id="message-box"></div>
+</div>
+
+</body>
+</html>
